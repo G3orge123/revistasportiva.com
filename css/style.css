@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #808080; /* Setarea culorii fontului la gri */
+}
+
+header {
+    background: #333;
+    padding: 1rem 0;
+    text-align: right; /* Alinierea la dreapta a elementelor din header */
+}
+
+header h1 {
+    margin: 0;
+    color: #fff;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Eliminarea marginii implicită */
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px; /* Spațiu între elementele meniului */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+}

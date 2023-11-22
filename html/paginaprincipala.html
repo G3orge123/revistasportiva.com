@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revista Sportivă Online</title>
+    <link rel="stylesheet" href="paginaprincipala.css">
+</head>
+<body>
+    <header>
+        <h1>Bine ați venit la Revista Sportivă Online</h1>
+        <nav>
+            <ul>
+                <li><a href="fotbal.html">Fotbal</a></li>
+                <li><a href="altesporturi.html">Alte Sporturi</a></li>
+                <li><a href="rezultate.html">Rezultate</a></li>
+                <li><a href="pareri.html">Păreri</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Despre Aplicație</h2>
+            <p>Platforma noastră sportivă include următoarele entități și relații cheie:</p>
+            <ul>
+                <li><strong>Utilizatori:</strong> [id (PK), email, telefon, nume_prenume]. Utilizatorii se înregistrează și interacționează cu site-ul.</li>
+                <li><strong>Păreri:</strong> [id (PK), id_utilizator (FK), text]. Păreri postate de utilizatori, legate de tabelul Utilizatori.</li>
+                <li><strong>Articole:</strong> [id (PK), titlu, continut]. Conținut editorial și știri sportive.</li>
+                <li><strong>Categorii:</strong> [id (PK), nume, descriere]. Clasifică articolele în diferite categorii sportive.</li>
+                <li><strong>Comentarii:</strong> [id (PK), id_utilizator (FK), text]. Comentarii la articole, legate de Utilizatori și Articole.</li>
+                <li><strong>Rezultate:</strong> [id (PK), id_eveniment (FK), rezultat]. Scoruri și rezultate sportive, asociate cu Evenimente.</li>
+                <li><strong>Evenimente:</strong> [id (PK), nume, data_start, data_sfarsit, locatie]. Evenimente și competiții sportive.</li>
+            </ul>
+            <p>Aceste tabele formează baza de date a aplicației, cu relații definite prin chei primare (PK) și secundare (FK) pentru a menține integritatea și coerența datelor.</p>
+        </section>
+
+        <section>
+            <h2>Diagrama</h2>
+            <img src="diagramaproiect.jpg" alt="Diagrama Conceptuală a Bazei de Date" />
+            <p>Aici va fi plasată diagrama conceptuală a bazei de date, ilustrând structura și relațiile dintre datele aplicației.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Revista Sportivă Online</p>
+    </footer>
+</body>
+</html>
